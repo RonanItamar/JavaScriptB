@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Exercicios interativos com HTML e JS</h1>
-    <div class="exercicio">
+ 
+  <!-- Exercício 1 -->
+   <div class="exercicio">
         <h2>Exercício 1: Soma Simples</h2>
         <input type="number" id="num1" placeholder="Número 1">
         <input type="number" id="num2" placeholder="Número 2">
@@ -16,6 +18,7 @@
         <p id="resultado1"></p>
     </div>
 
+  <!-- Exercício 2 -->
     <div class="exercicio">
         <h2>Exercício 2: Verificar Idade</h2>
         <input type="number" id="idade" placeholder="Idade">
@@ -23,93 +26,99 @@
         <p id="resultado2"></p>
     </div>
 
-    <div class="exercicio">
-        <h2>Exercício 3: Contar Caracteres</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="contar();">Contar</button>
-        <p id="resultado3"></p>
-    </div>
+  <!-- Exercício 3 -->
+  <div class="exercicio">
+    <h2>Contar Caracteres</h2>
+    <input type="text" id="textoCaracteres">
+    <button onclick="contarCaracteres()">Contar</button>
+    <p id="resultadoCaracteres"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 4: Verificar Par ou Ímpar</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="verificarpar();">Verificar</button>
-        <p id="resultado4"></p>
-    </div>
+  <!-- Exercício 4 -->
+  <div class="exercicio">
+    <h2>Verificar Par ou Ímpar</h2>
+    <input type="number" id="numeroParImpar">
+    <button onclick="verificarParOuImpar()">Verificar</button>
+    <p id="resultadoParImpar"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 5: Nome em Caixa Alta</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="nomeCaixaAlta();">Verificar</button>
-        <p id="resultado5"></p>
-    </div>
+  <!-- Exercício 5 -->
+  <div class="exercicio">
+    <h2>Nome em Caixa Alta</h2>
+    <input type="text" id="nomeCaixaAlta">
+    <button onclick="converterCaixaAlta()">Converter</button>
+    <p id="resultadoCaixaAlta"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 6: Maior de Dois Números</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="maior();">Verificar</button>
-        <p id="resultado6"></p>
-    </div>
+  <!-- Exercício 6 -->
+  <div class="exercicio">
+    <h2>Maior de Dois Números</h2>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="compararNumeros()">Comparar</button>
+    <p id="resultadoMaior"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 7: Tabuada</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="tabuada();">Verificar</button>
-        <p id="resultado7"></p>
-    </div>
+  <!-- Exercício 7 -->
+  <div class="exercicio">
+    <h2>Tabuada</h2>
+    <input type="number" id="numeroTabuada">
+    <button onclick="gerarTabuada()">Gerar</button>
+    <div id="resultadoTabuada"></div>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 8: Contador de 1 a 10</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="contar();">Contador</button>
-        <p id="resultado8"></p>
-    </div>
+  <!-- Exercício 8 -->
+  <div class="exercicio">
+    <h2>Contador de 1 a 10</h2>
+    <button onclick="contarAteDez()">Contar</button>
+    <div id="resultadoContador"></div>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 9: Média de Notas</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="medianotas();">Calcular</button>
-        <p id="resultado9"></p>
-    </div>
+  <!-- Exercício 9 -->
+  <div class="exercicio">
+    <h2>Média de Notas</h2>
+    <input type="number" id="nota1">
+    <input type="number" id="nota2">
+    <input type="number" id="nota3">
+    <button onclick="calcularMedia()">Calcular</button>
+    <p id="resultadoMedia"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 10: Conversor de Temperatura</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="conversor();">Converter</button>
-        <p id="resultado10"></p>
-    </div>
+  <!-- Exercício 10 -->
+  <div class="exercicio">
+    <h2>Conversor de Temperatura</h2>
+    <input type="number" id="celsius">
+    <button onclick="converterTemperatura()">Converter</button>
+    <p id="resultadoTemperatura"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 11: Dia da Semana</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="diasemana();">Verificar</button>
-        <p id="resultado11"></p>
-    </div>
+  <!-- Exercício 11 -->
+  <div class="exercicio">
+    <h2>Dia da Semana</h2>
+    <input type="number" id="numeroDia">
+    <button onclick="verificarDiaSemana()">Verificar</button>
+    <p id="resultadoDiaSemana"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 12: Senha Simples</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="senha();">Verificar</button>
-        <p id="resultado12"></p>
-    </div>
+  <!-- Exercício 12 -->
+  <div class="exercicio">
+    <h2>Senha Simples</h2>
+    <input type="password" id="senha">
+    <button onclick="verificarSenha()">Verificar</button>
+    <p id="resultadoSenha"></p>
+  </div>
 
-    <div class="exercicio">
-        <h2>Exercício 13: Contagem Regressiva</h2>
-        <input type="number" id="num1" placeholder="Número 1">
-        <input type="number" id="num2" placeholder="Número 2">
-        <button onclick="contagem();">Contar</button>
-        <p id="resultado13"></p>
-    </div>
+  <!-- Exercício 13 -->
+  <div class="exercicio">
+    <h2>Contagem Regressiva</h2>
+    <button onclick="contagemRegressiva()">Iniciar</button>
+    <div id="resultadoContagem"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
     <script src="script.js"></script>
 </body>
